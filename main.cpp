@@ -116,7 +116,7 @@ int main()
     system(_("cls"));
 	std::cout << ColorText(CYAN, _("\n\n    [?] ")) << ColorText(WHITE, _("Waiting for Overwatch 2!")) << std::endl;
 
-	while (!FindWindowA(_("TankWindowClass"), nullptr)) { Sleep(500); } // Waiting to overwatch if not launched yet
+	while (!FindWindowA(_("UnrealWindow"), nullptr)) { Sleep(500); } // Waiting to overwatch if not launched yet
     system(_("cls"));
 
     std::cout << ColorText(GREEN, _("\n\n    [!] ")) << ColorText(WHITE, _("Press ")) << ColorText(LIGHTGREEN, _("INSERT ")) << ColorText(WHITE, _("to start idleHelper.")) << std::endl;
